@@ -1,0 +1,249 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.cover-page {
+	width: 100%;
+	height: 100%;
+	background: url('../image/bg-01.png') no-repeat 50% 50%;
+	margin: auto;
+	top: 0;
+	display: table;
+	background-size: cover;
+}
+
+.cover-page .cover{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.conten{
+	max-width: 1150px;
+	margin: auto;
+	text-align: right;
+}
+
+.conten h1{
+	font-family: 'century gothic',san-serif;
+	color: #254380;
+	font-size: 400%;
+	text-shadow: 0 0 300px #000;
+}
+.conten h2{
+	font-family: 'century gothic',san-serif;
+	color: #254380;
+	font-size: 200%;
+	text-shadow: 0 0 300px #000;
+	padding-bottom: 25px;
+}
+
+.conten .btn{
+	border-radius: 20px;
+	color: #254380;
+	text-decoration: none;
+	font-family: 'century gothic',san-serif;
+	border: 3px solid;
+	padding: 4px 13px;
+	font-weight: bold;
+}
+
+.page{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	margin: auto;
+	top: 0;
+	display: table;
+	background-size: cover;
+}
+
+.header {
+	height: 50px;
+	width: 100%;
+	background-color: #92dcf4;
+}
+
+.form-page {
+	padding-left: 100px;
+}
+
+.form{
+	padding-top: 20px;
+}
+
+
+.form-page h1{
+	font-family: 'century gothic',san-serif;
+	color: #254380;
+	font-size: 200%;
+	text-shadow: 0 0 300px #000;
+	margin: 20px 0px 0px -50px;
+}
+
+.form h2{
+	font-family: 'century gothic',san-serif;
+	color: #254380;
+	font-size: 100%;
+	text-shadow: 0 0 300px #000;
+	padding: 10px 0 10px 0;
+	font-weight: normal;
+}
+
+.form input{
+	height: 30px;
+	width: 100%;
+	color: #254380;
+	border-radius: 10px;
+	border: 1px solid;
+	padding: 0 20px 0 20px;
+	font-size: 100%;
+}
+
+.form select{
+	height: 30px;
+	width: 200px;
+	color: #254380;
+	border-radius: 10px;
+	border: 1px solid;
+	padding: 0 20px 0 20px;
+	font-size: 100%;
+}
+
+.form .btn{
+	height: 40px;
+	width: 130px;
+	color: #ffff;
+	background-color: #254380;
+	border-radius: 30px;
+	border: 0px solid;
+	padding: 0 20px 0 20px;
+	font-size: 120%;
+	cursor: pointer;
+	margin-top: 20px;
+
+}
+
+.form .btn:hover{
+	color: #254380;
+	background-color: #ffff;
+	border-radius: 30px;
+	cursor: pointer;
+	border: 1px solid;
+}
+
+.form .btn:active{
+	transform: translateY(1px);
+}
+
+.page .body{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.body .conten{
+	max-width: 1150px;
+	margin: auto;
+	text-align: center;
+}
+
+.conten .btn{
+	border-radius: 20px;
+	color: #254380;
+	text-decoration: none;
+	font-family: 'century gothic',san-serif;
+	border: 3px solid;
+	padding: 4px 13px;
+	margin: 50px; 
+	font-weight: bold;
+}
+
+.conten .btn:hover{
+	color: #fff;
+	background-color: #254380;
+	border-radius: 30px;
+	cursor: pointer;
+	border: 3px solid #254380;
+}
+
+.conten .btn:active{
+	transform: translateY(1px);
+}
+
+.tab{
+	width: 1000px;
+	align-content: center;
+	margin: 50px auto;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th {
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px;
+	font-family: 'century gothic',san-serif;
+	font-weight: normal;
+	border-bottom: 1px solid #737373;
+}
+
+.table td {
+	border-bottom: 1px solid #dadada;
+	padding: 5px;
+}
+
+/* EVEN */
+
+.table tr:nth-child(even) {
+	background: #e1f4ff;
+}
+
+/* ODD */
+
+.table tr:nth-child(odd) {
+	background: #ffff;
+}
+
+.option{
+	max-width: 1150px;
+	margin: auto;
+	text-align: center;
+}
+
+.option .btn{
+	border-radius: 20px;
+	color: #254380;
+	text-decoration: none;
+	font-family: 'century gothic',san-serif;
+	border: 3px solid;
+	padding: 4px 13px;
+	margin: 50px; 
+	font-weight: bold;
+}
+
+.option .btn:hover{
+	color: #fff;
+	background-color: #254380;
+	border-radius: 30px;
+	cursor: pointer;
+	border: 3px solid #254380;
+}
+
+.option .btn:active{
+	transform: translateY(1px);
+}
