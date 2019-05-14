@@ -1,7 +1,7 @@
 <?php
 //error_reporting(E_ALL ^ E_NOTICE || E_WARNING);
 //koneksi ke database
-$conn = mysqli_connect("remotemysql.com:3306", "naoPhXMpFC", "QuZFUTe0oK", "naoPhXMpFC");
+$conn = mysqli_connect("db4free.net:3306", "holiesapp", "holies000", "holies");
 
 function query($query) {
 	global $conn;
