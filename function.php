@@ -1,7 +1,7 @@
 <?php
 //error_reporting(E_ALL ^ E_NOTICE || E_WARNING);
 //koneksi ke database
-$conn = mysqli_connect("000webhost.com:3306", "id9036139_holies", "holies000", "id9036139_holies");
+$conn = mysqli_connect("remotemysql.com:3306", "naoPhXMpFC", "QuZFUTe0oK", "naoPhXMpFC");
 
 function query($query) {
 	global $conn;
