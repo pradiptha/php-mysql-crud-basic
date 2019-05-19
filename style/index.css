@@ -57,6 +57,7 @@ body{
     background-color: #449d44;
     border: none;
     padding: 0 10px;
+    margin-left: 10px;
 }
 .btn-row a{
     text-decoration: none;

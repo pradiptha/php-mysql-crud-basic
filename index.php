@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require 'function.php';
     if(isset($_GET["q"])){
         // var_dump($_POST);
@@ -28,9 +29,22 @@
                 <div class="title-row">
                     <h2>Daftar <b>Mahasiswa<b></h2>
                 </div>
-                <div class="btn-row">
-                    <a class="btn-add" href="add.php"><i class="fas fa-plus-circle fa-lg"></i>Tambah Data Mahasiswa</a>
-                </div>
+                <?php
+                    if ( isset($_SESSION["login"])) {
+                        echo '
+                        <div class="btn-row">
+                            <a class="btn-add" href="logout.php" style="background-color: #F44336!important;" >Logout</a> 
+                            <a class="btn-add" href="add.php"><i class="fas fa-plus-circle fa-lg"></i>Tambah Data Mahasiswa</a>
+                        </div>
+                        ';
+                    } else {
+                        echo '
+                        <div class="btn-row">
+                            <a class="btn-add" href="login.php">Login</a>
+                        </div>
+                        ';
+                    }
+                ?>
             </div>
             <div class="search-wrapper">
                 <div class="field">
@@ -53,7 +67,13 @@
                             <th>Tgl Lahir</th>
                             <th>Email</th>
                             <th>Fakultas</th>
+                            <?php
+                            if ( isset($_SESSION["login"])) {
+                                echo '
                             <th>Actions</th>
+                            ';
+                            }
+                            ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,10 +88,12 @@
                             <td><?=$row["tglLahir"]?></td>
                             <td><?=$row["email"]?></td>
                             <td><?=$row["fakultas"]?></td>
+                            <?php if ( isset($_SESSION["login"])) :?>
                             <td>
                                 <a href="update.php?id=<?=$row["idMhs"]?>" class="edit"><i class="far fa-edit fa-lg"></i></a>
-                                <a href="delete.php?id=<?=$row["idMhs"]?>" onclick="return confirm('Hapus Data?');" class="delete"><i class="fas fa-trash-alt fa-lg"></i></a>
+                                <a href="delete.php?id=<?=$row["idMhs"]?>" onclick="return confirm("Hapus Data?");" class="delete"><i class="fas fa-trash-alt fa-lg"></i></a>
                             </td>
+                            <?php endif ?>
                         </tr>
                         <?php $i++;
                             endforeach;
